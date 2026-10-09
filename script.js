@@ -10,9 +10,8 @@
 
 /* ---------- CONFIGURACIÓN DEL CLIENTE (editar aquí) ---------- */
 const CONFIG = {
-  // Número de WhatsApp con lada de país, solo dígitos. Ej. México: 5215512345678
-  // IMPORTANTE: reemplazar antes de publicar. Con el valor de ejemplo no se muestra el número en el sitio.
-  whatsapp: '520000000000',
+  // Número de WhatsApp con lada de país, solo dígitos. Ej. México: 524422597895
+  whatsapp: '524422597895',
   // URL de la página de Facebook. Si se deja vacía, el enlace no se muestra.
   facebook: '',
   brand: 'Vidrio y Aluminios Moreno'
@@ -63,8 +62,8 @@ const CONFIG = {
 
   const waLabel = $('#waLabel');
   if (waLabel && !waIsPlaceholder && waDigits.length >= 12) {
-    // Formato +52 55 1234 5678
-    waLabel.textContent = `+${waDigits.slice(0, 2)} ${waDigits.slice(-10, -8)} ${waDigits.slice(-8, -4)} ${waDigits.slice(-4)}`;
+    // Formato +52 442 259 7895
+    waLabel.textContent = `+${waDigits.slice(0, 2)} ${waDigits.slice(-10, -7)} ${waDigits.slice(-7, -4)} ${waDigits.slice(-4)}`;
   }
   if (CONFIG.facebook) {
     const row = $('#fbRow');
